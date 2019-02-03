@@ -1,0 +1,49 @@
+<div class="home-nav-bg frame-shadow" ></div>
+
+<svg class="welcome" xmlns="http://www.w3.org/2000/svg" viewBox="10 50 500 256" width="480" height="320" >
+  <style>
+    @keyframes reveal {
+      from, 5%,10%, 30%, to { opacity: 0 }
+      15%, 25% { opacity: 1  }
+    }
+    .✋ { animation: reveal 15s infinite both }
+    .👍 { animation-delay: 3s }
+    .👌 { animation-delay: 6s }
+    .✌ { animation-delay: 9s }
+    .m{ animation-delay: 12s }
+    .🖕 { animation-play-state: paused; }
+  </style>
+
+  <g font-family="soleil, sans-serif" font-weight="bold" >
+    <g fill="#FFFFFF" font-size="48" >
+      <text transform="translate(30 92)" font-size="67">Naim Bijapure</text>
+      <text transform="translate(180 140)" font-size="38">Full Stack</text>
+      <text transform="translate(200 175)" font-size="38">Web Developer</text>
+
+      <path class="brk"  d="M176.03 217 l 11.02-20 h-9.1L168 214.57c-.67 1.2-.67 3 0 4.2l9.95 18.23h9.1l-11.02-20zm274.37 0l-11 20h9.1l9.94-18.32c.67-1.2.67-2.62 0-3.82L448.5 197h-9.1l11 20z"/>
+      <text class="✋ 👉" transform="translate(204 280)">Front End</text>
+      <text class="✋ 👍" transform="translate(200 280)">JavaScript</text>
+      <text class="✋ 👌" transform="translate(230 280)">Nodejs</text>
+      <text class="✋ ✌" transform="translate(230 280)">Python</text>
+      <text class="✋ m" transform="translate(200 280)">MongoDB</text>
+
+      <text class="✋ 🖕" fill="#f05" transform="translate(90 234)">Catching IE Bugs</text>
+    </g>
+    <g fill="#F26C4F" font-size="24" >
+      <text transform="translate(160 220)" >specialising in</text>
+      <text transform="translate(52 28)" >My name is</text>
+      <text transform="translate(46 132)" >and I am a</text>
+    </g>
+  </g>
+</svg>
+
+<a class="nav-link home-link work font-super" routerLink="/folio" routerLinkActive="active" >
+  Folio
+</a>
+<a class="nav-link home-link about font-super" routerLink="/about" routerLinkActive="active" >
+  About
+</a>
+
+<footer class="copy" >
+  &copy; {{ date | date:'y' }} Naim Bijapure | Built with ❤ <a href="https://angular.io/" target="_blank" rel="noreferrer" >Angular 7</a>
+</footer>

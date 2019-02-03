@@ -1,0 +1,17 @@
+
+
+@media screen and (min-width: 1500px) {
+
+  .page-container::before {
+    content: "";
+    display: block;
+    left: 2rem;
+    top: 2rem;
+    bottom: 2rem;
+    right: 1200px;
+    background-color: rgba(0, 137, 123, 0.5);
+    position: absolute;    
+    border-radius: 8px 0 0 8px;
+  }
+
+}

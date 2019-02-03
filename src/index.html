@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>Naim Bijapure - Full Stack Web Developer Portfolio</title>
+  <meta name="author" content="Naim Bijapure">
+  <!-- Search Engine -->
+  <meta name="description" content="I am a full stack web developer, specialising in  Javascript,Nodejs,Python and Full stack Technologies.">
+  <meta name="image" content="">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Naim Bijapure - Full Stack Web Developer Portfolio">
+  <meta itemprop="description" content="I am a front end web developer, specialising in Javascript,Nodejs,Python and Front End Technologies.">
+  <meta itemprop="image" content="">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Naim Bijapure - Full stack Web Developer Portfolio">
+  <meta name="twitter:description" content="I am a Full stack web developer, specialising in Wordpress, Javascript, and Full stack Technologies.">
+  <meta name="twitter:image:src" content="">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Naim Bijapure - Full stack Web Developer Portfolio">
+  <meta name="og:description" content="I am a Full stack web developer, specialising in Wordpress, Javascript, and Full stack Technologies.">
+  <meta name="og:image" content="">
+  <meta name="og:url" content="https://Naim-Bijapure.github.io/">
+  <meta name="og:site_name" content="Naim Bijapure - Full stack Web Developer Portfolio">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+  <!-- favicons. courtesy http://realfavicoNaim-Bijapure.github.io->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00897b">
+  <meta name="theme-color" content="#00897b">
+  <!-- Critical CSS. Mainly the intro loader -->
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
+  <style>
+  body { background-color: #202121 }
+  .full-screen { position: fixed; top:0; bottom: 0; left: 0; right: 0; }
+  .pre-loader-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    background-color: #00897B;
+    z-index: 99;
+  }
+  .pre-loader-frame.going { transform: translateX(100%) }
+  .loader-logo { width: 480px; max-width: 90vw; }
+  .loader-spin { width: 64px; }
+  .lg-jr { animation: fade-in .4s 1s both }
+  .lg-br { animation-duration: .5s; animation-fill-mode: both; }
+  .br-l { animation-name: svg-draw; }
+  .br-r { animation-delay: .5s, 1s; animation-name: svg-draw, nudge-right; }
+  .spin { animation: line-pulse 1.5s infinite ease-in alternate-reverse, spin 1.2s infinite linear; transform-origin: 10px; }
+  @keyframes svg-draw { from { stroke-dashoffset: 21 } 50% { stroke-dashoffset: 10 } to { stroke-dashoffset: 0 }}
+  @keyframes nudge-right { from { transform: translatex(-19px) }}
+  @keyframes fade-in { from {opacity: 0 } to {opacity: 1 }}
+  @keyframes line-pulse { from { stroke-dasharray: 5 40} to { stroke-dasharray: 40 40}}
+  @keyframes spin { to { transform: rotate(360deg)}}
+  </style>
+</head>
+
+<body>
+  <div class="full-screen" >
+    <canvas class="jr-canvas" id="jr_grid" ></canvas>
+    <!-- adding particle js -->
+    <!-- <div id="particles-js"></div> -->
+    
+  </div>
+
+  <app-root></app-root>
+
+  <div id="ldFr" class="pre-loader-frame full-screen" >
+    <svg class="loader-logo" viewBox="  -5 0 44 20">
+      <g fill="none" stroke-width="2">
+        <!-- <path id="ldLg" class="lg-jr"   stroke="#E4E5E7" 
+        d="M10 1h5v10a4 4 0 0 1-4 4H9m7.5-14h3a4 4 0 0 1 0 8h-3 2q3 0 4 3t2.5 3"/> -->
+        
+        <!-- ! testing polygon svg N -->
+      	<path id="ldLg" class="lg-jr"   stroke="#E4E5E7" style="transform: scale(0.5) translate(22px,5px)"
+   
+   d="m 0,0.663 h 9.401 l 6.481,6.483 v 6.981 L 5.307,3.608 5.274,22.969 H 0 Z M 23.631,22.969 H 14.232 L 7.752,16.485 V 9.501 L 18.327,20.018 18.359,0.662 h 5.272 z"
+   />
+        <!-- ! end -->
+
+
+        <g stroke-dasharray="21" stroke-linejoin="round" stroke="#B2DFDB">
+          <path class="lg-br br-l" d="M7-1L2 8l5 9"/>
+          <path class="lg-br br-r" d="M27 17l5-9-5-9"/>
+        </g>
+
+      </g>
+          
+    </svg>
+    <svg class="loader-spin" viewBox="0 0 20 20" >
+        <circle id="load" stroke="#fff" stroke-dashoffset="-20" opacity="0.5" stroke-width="2" fill="none" cx="10" cy="10" r="8" class="spin"/>
+    </svg>
+
+    <!-- preload readycheck -->
+<script>  
+  ! function (n) {
+    function e(n) {
+      
+      d[n] = !0, 
+      d[0] && d[1] && (o.dataset.ready = !0, d.forEach(function (n) {
+        return n = !1
+      }))
+    }
+    var t = n.getElementById("ldLg"),
+      o = n.getElementById("ldFr"),
+      d = [!1, !1];
+    t.addEventListener("animationend", function () {
+      setTimeout(function () {
+        e(1)
+      }, 500)
+    }),
+     window.addEventListener("load", function () {
+      e(0), setTimeout(function () {
+        e(1)
+      }, 503)
+    })
+  }(document);
+</script>
+    <!-- typekit -->
+    <script src="https://use.typekit.net/qgo6zhu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </div>
+
+</body>
+</html>

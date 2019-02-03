@@ -1,0 +1,36 @@
+<div class="project-wrapper-bg full-screen" *ngIf="state === 'in'" [routerLink]="{category: 'all'}" ></div>
+
+<li #float class="project-float" [ngStyle]="style" [ngClass]="state" >
+
+  <div #introBG class="project-intro-bg frame-shadow"
+    [style.background]="project.intro.style.background" >
+  </div>
+
+  <a class="project-intro content-pad hover-trigger"
+    [style.color]="project.intro.style.color"
+    [routerLink]="{project: project.slug}" >
+
+    <div #label class="project-intro-label" >
+      <h2 class="header-3" >{{project.intro.title}}</h2>
+      <em>{{project.intro.desc}}</em>
+    </div>
+
+    <div #icon class="project-intro-icon" >
+      <img [src]="project.intro.icon" />
+    </div>
+
+  </a>
+
+
+  <ng-container *ngIf="state === 'in'" >
+
+    <article class="project-wrapper" [@content] >
+
+      <app-template [template]="project" ></app-template>
+
+    </article>
+
+    <a class="project-close" [routerLink]="{category: 'all'}" [style.color]="project.intro.style.color" >&times;</a>
+  </ng-container>
+
+</li>

@@ -1,0 +1,167 @@
+
+<main class="site-content full-screen"
+  [@routeAnimation]="appState.page"
+  [scrollTop]="scrollPos"
+  #routesContainer >
+
+  <router-outlet #routerOutlet="outlet" (activate)="updateRoute(routerOutlet)" ></router-outlet>
+
+</main>
+
+<div class="sidebar" [@nav]="appState.page" *ngIf="sidebarVisible()" >
+  <div class="sidebar-bg frame-shadow" [ngClass]="appState.page" ></div>
+
+  <div class="site-logo" >
+    <a routerLink="home" >
+      <!-- ! logo is here -->
+      <svg viewBox="1 0 35 19" class="animate" width="100" height="60" >
+          <g fill="none" stroke-width="2"><g stroke="#FFFFFF" >
+          <path class="text" style="transform: scale( 0.5) translate(5px,-10px)"   d="m 0,0.663 h 9.401 l 6.481,6.483 v 6.981 L 5.307,3.608 5.274,22.969 H 0 Z M 23.631,22.969 H 14.232 L 7.752,16.485 V 9.501 L 18.327,20.018 18.359,0.662 h 5.272 z" />
+          </g><g stroke-linejoin="round" stroke="#FFFFFF">
+          <path class="left" d="M7-1L2 8l5 9" />
+          <path class="right" d="M27 17l5-9-5-9"/>
+          </g></g>
+          </svg>
+    </a>
+  </div>
+
+  <nav id="sideNav" class="site-nav" >
+    <ng-container *ngIf="siteNavVisible()" >
+      <a class="nav-link site-link" routerLink="home" routerLinkActive="active"  >
+        <div class="navicon hide-small" >
+          <svg  viewBox="0 0 36 36"><circle class="ico" cx="18" cy="18.5" r="16" mask="url(#hom)" fill="#202121"/></svg>
+        </div>
+
+        <span class="header-4" >Home</span>
+      </a>
+
+      <a class="nav-link site-link" routerLink="folio" routerLinkActive="active"  >
+        <div class="navicon hide-small" >
+          <svg  viewBox="0 0 36 36"><circle class="ico" cx="18" cy="18.5" r="16" mask="url(#wrk)" fill="#202121"/></svg>
+        </div>
+
+        <span class="header-4" >Folio</span>
+      </a>
+
+      <a class="nav-link site-link" routerLink="about" routerLinkActive="active" >
+        <div class="navicon hide-small" >
+          <svg  viewBox="0 0 36 36"><circle class="ico" cx="18" cy="18.5" r="16" mask="url(#abt)" fill="#202121"/></svg>
+        </div>
+
+        <span class="header-4" >About Me</span>
+      </a>
+    </ng-container>
+  </nav>
+
+</div>
+
+<nav class="contact-nav" [ngClass]="appState.page" *ngIf="contactNavVisible()" >
+  <a class="contact-link" href="mailto:naimbijapure7407@gmail.com" >
+    <i class="navicon inline" >
+        <svg  viewBox="0 0 36 36"><circle class="ico" cx="18" cy="18.5" r="16" mask="url(#eml)" fill="#202121"/></svg>
+    </i>
+    <span>Naimbijapure7407@gmail.com</span>
+  </a>
+  <a class="contact-link" href="https://github.com/Naim-Bijapure" target="_blank" rel="noreferrer" >
+    <i class="navicon inline" >
+      <svg viewBox="0 0 36 36">
+        <path class="ico" fill="#202121" d="M18 2.1C9 2.1 1.7 9.4 1.7 18.4c0 7.2 4.68 13.3 11.15 15.46.82.15 1.1-.35 1.1-.8V30.3c-4.54 1-5.5-2.18-5.5-2.18-.74-1.88-1.8-2.38-1.8-2.38-1.48-1 .1-1 .1-1 1.64.12 2.5 1.7 2.5 1.7 1.46 2.47 3.8 1.76 4.74 1.34.13-1.05.55-1.77 1.02-2.18-3.62-.4-7.42-1.8-7.42-8.05 0-1.78.64-3.23 1.68-4.37-.16-.4-.72-2.07.16-4.3 0 0 1.37-.45 4.48 1.66 1.3-.36 2.7-.54 4.08-.55 1.38 0 2.78.17 4.08.53 3.1-2.1 4.47-1.67 4.47-1.67.9 2.24.33 3.9.17 4.3 1.04 1.15 1.67 2.6 1.67 4.38 0 6.26-3.83 7.64-7.46 8.04.6.5 1.1 1.5 1.1 3v4.47c0 .44.28.95 1.1.8C29.64 31.7 34.3 25.6 34.3 18.4c0-9-7.3-16.3-16.3-16.3z"/>
+      </svg>
+    </i>
+    <span>github.io/Naim-Bijapure</span>
+  </a>
+</nav>
+
+    <!-- burger menu -->
+<button class="menu-toggle small-only"
+  (click)="toggleSidebar()"
+  [ngClass]="{ 'on': appState.menuOpen }" >
+  <svg class="ico" viewBox="0 0 6 6">
+    <g stroke="#B2DFDB" stroke-width="1" >
+      <path class="b-1" d="m-1 1h10"/>
+      <path class="b-2" d="m-1 3h8"/>
+      <path class="b-3" d="m-1 5h10"/>
+    </g>
+  </svg>
+
+</button>
+<!-- <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles> -->
+
+<svg >
+  <defs>
+    <mask id="abt">
+      <path fill="#fff" d="M0 0h36v36H0z"/>
+      <path d="M21.6 17s-1.3 1-3.6 1-3.5-1-3.5-1c-4.3 1.5-6.2 7.3-6.2 8.7 0 1.4 1.4 1.8 1.4 1.8 2.7 1 8.3 1 8.3 1s5.6 0 8.3-1c0 0 1.4-.4 1.4-1.8s-2-7.2-6.2-8.8z"/>
+      <circle cx="18" cy="12.4" r="4.9"/>
+    </mask>
+    <mask id="eml">
+      <path fill="#fff" d="M0 0h36v36H0z"/>
+      <rect x="8" y="11" height="14" width="20" rx="2"/>
+      <path stroke="#fff" d="M8 11l10 10 10-10" fill="none"/>
+    </mask>
+    <mask id="hom">
+      <path fill="#fff" d="M0 0h36v36H0z"/>
+      <path d="M18 8l10 10H8m3 1h14v9H11"/>
+    </mask>
+    <mask id="wrk">
+      <path fill="#fff" d="M0 0h36v36H0z"/>
+      <rect x="8" y="11" height="12" fill="#fff" stroke="#000" width="20" rx="1"/>
+      <path stroke="#000" d="M10 14h6m-6 2h5m-5 2h7"/>
+      <path d="M22 13h4v8h-4zm-7 12h6l1 4h-8"/>
+    </mask>
+  </defs>
+</svg>
+
+
+
+<!--
+
+appComponent
+appModule
+- home
+- about
+- folio
+  projectClass
+- folio-sub
+
+routingModule
+
+templaterModule
+  CSS (shared)
+  templateClass
+- template-text
+  Component
+- template-image
+  Component
+- template-codepen
+  Component
+
+shared
+- layout-updateService <- EVENT EMITTER????
+  layoutClass
+- commsService
+  commsClass
+
+
+TEMPLATES
+>Header
+  - BG image
+  - Text Left
+  - Image Right
+>Columns block
+  - image/text
+>Gallery block
+  - image link array
+>Codepen block
+  - codepen link
+> big image block
+  - image link
+
+  STYLES (based on above)
+  - grid-1 grid-2 grid-flex
+  - image frame
+  - large margins on rows, to make space for overlapping images
+  - AOS effects??
+
+
+-->

@@ -1,0 +1,52 @@
+
+
+<header class="page-header frame-shadow">
+
+  <h1 class="page-title" >{{pageTitle()}}</h1>
+
+  <div class="btn-box">
+    <button class="header-btn filter-dropdown small-only" *ngIf="!activeProject" (click)="dropOpen = true" >
+      {{category}}
+      <i class="tiny-icon" >
+        <svg class="ico" viewBox="0 0 6 6">
+          <path d="m0 1h6l-3 4" />
+        </svg>
+      </i>
+    </button>
+    <button class="nav-link back-btn" *ngIf="activeProject" [routerLink]="{category: category}" >
+      <i class="tiny-icon" >
+        <svg class="ico" viewBox="0 0 6 6">
+          <path d="m1 3l4 3v-6" />
+        </svg>
+      </i>
+      Back
+    </button>
+  </div>
+
+  <ul class="filter-grp" [ngClass]="{ 'open' : dropOpen }" (click)="dropOpen = false" >
+    <li *ngFor="let filter of filters" class="folio-filter" >
+      <button class="header-btn nav-link"
+        [routerLink]="{category: filter}"
+        [ngClass]="{ active: category == filter }" >
+        {{filter | titlecase}}
+      </button>
+    </li>
+  </ul>
+
+</header>
+
+<section class="page-container outer-frame" #listContainer >
+
+  <ul class="projects-list" [style.height.px]="folioHeight" >
+
+    <app-folio-item
+      *ngFor="let project of projects; index as n; trackBy: trackProjects"
+      [project]="project"
+      [listIndex]="n"
+      [activeProject]="activeProject"
+      (updateActive)="setFolioHeight($event)" >
+    </app-folio-item>
+
+  </ul>
+
+</section>
