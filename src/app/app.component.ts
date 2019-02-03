@@ -84,34 +84,34 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
   //called when find it is mobile
   closeSidebar() {
-    console.log('close sidebar called');
+    // console.log('close sidebar called');
 
     this.appState.menuOpen = false;
   }
 
   sidebarVisible() {
-    console.log('sidebar visible called');
+    // console.log('sidebar visible called');
     
     const state = this.appState;
     return !state.isMobile || state.menuOpen;
   }
 
   siteNavVisible() {
-    console.log('sitenav visible called');
+    // console.log('sitenav visible called');
 
     const state = this.appState;
     return state.isMobile || state.page !== 'home';
   }
 
   contactNavVisible() {
-    console.log('contact visible called');
+    // console.log('contact visible called');
 
     const state = this.appState;
     return !state.isMobile || state.page === 'home';
   }
 
   updateRoute(outlet) {
-    console.log('update route called');
+    // console.log('update route called');
 
     const ref = outlet.activatedRouteData.anim;
     this.pageSub.next(ref);
