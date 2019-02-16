@@ -12,7 +12,7 @@
   width: 100%;
   right: 0;
   position: fixed;
-  background-color: #f26c4f;
+  background-color: #21201f;
   z-index: 5;
 
   display: flex;
@@ -43,11 +43,11 @@
 
 
   .header-btn:hover {
-    background-color: #F0431C;
+    background-color:#5f605d;
   }
-
+  
   .header-btn.active {
-    background-color:#F0431C;
+    background-color: #383838;
   }
 
   .page-header {

@@ -40,7 +40,8 @@ export default class GridRect {
   drawRect(alpha) {
     const ctx = this.ctx;
     // TODO future - make this variable. for now static to match the portfolio
-    const color = `rgba(253,75,75,${alpha})`;
+    const color = `rgba(239,104,36,${alpha})`;
+
     ctx.clearRect(...this.dims);
     ctx.fillStyle = color;
     ctx.fillRect(...this.dims);

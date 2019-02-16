@@ -17,7 +17,7 @@ button:focus {
 
 body {
   font: 300 16px/1.375 "soleil", sans-serif;
-  color: #FFFFFF;
+  color: #727271;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.2}
@@ -58,6 +58,7 @@ a {
 
 .nav-link:hover::after, .nav-link.active::after, .content a:hover::after, .content a.match-content::after {
   background-color: currentColor;
+ 
 }
 
 .text-center {

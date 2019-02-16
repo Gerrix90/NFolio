@@ -1,14 +1,17 @@
 
 .site-logo {
   width:100%;
-  padding: 12px;
+  padding: 15px;
+  
 }
 .site-logo a {
   display: block;
   position: relative;
   max-width: 110px;
   max-height: 52px;
-  margin: auto;
+  /* margin: auto; */
+  margin-left: 15%;
+
 }
 
 /* site logo */
@@ -28,10 +31,9 @@
   width: 50vw;
   min-width: 150px;
   height: 100vh;
-  background-color: #F26C4F;
+  background-color: #21201f;
   /* default color is #00897B */
   /* modification */
-  
 }
 
 .site-nav {
@@ -51,13 +53,15 @@
 }
 .site-link:hover {
   /* background-color: #1c6b63; */
-  background-color:rgb(240, 67, 28);
+  background-color:#5f605d;
+
 
   /* color: #f1f4fa; */
 }
 .site-link.active {
   /* background-color: #0e4c46; */
-  background-color: rgb(240, 67, 28);
+  background-color: #383838;
+   
 
 }
 
@@ -135,7 +139,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    background-color:#F26C4F; 
+    background-color:#21201f; 
     /* default color is #00897B */
     /* background-image: linear-gradient(90deg,#F26C4F,rgb(252, 152, 129));; */
 
@@ -143,7 +147,7 @@
 
   .home.sidebar-bg {
     
-    border: 0.9px solid #FFFFFF;
+    border: 0.9px solid #ef6817;
     transform: translateX(10vw) skew(20deg);
   }
 
