@@ -9,7 +9,7 @@ import cm from './cm'
 import N from './N';
 export default [
   cm,
- N,
+ N,,scp,web
 ];
  
 

@@ -72,12 +72,22 @@ export default {
         access the file system of android. 
         as well as i used the redux and react-redux liabrariy to manage the state of application  
         </p>
+        `,
         
+      },
+      {
+       type: 'image',
+        height: '13%',
+        class:'image-shadow',
+        value: `${rootLink}cm-ss-2.png`,
+        alt: 'Code Mirror',
+        caption: 'Website Animations'
+      }
+    ],
 
        
-        `,
-      }],
     }, 
+
       {
       class: 'footer-row',
       content: [{
