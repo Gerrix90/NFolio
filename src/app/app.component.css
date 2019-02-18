@@ -2,7 +2,7 @@
 .site-logo {
   width:100%;
   padding: 15px;
-  
+ 
 }
 .site-logo a {
   display: block;
@@ -18,9 +18,8 @@
 .animate path { transition: 300ms; transform-origin: 17px 16px; }
 .animate:hover path { transition-delay: 100ms; }
 /* .animate:hover .text { transform: translate(-8px, 1px) rotate(90deg) } */
-.animate:hover .left { transform: translateX(30px)  scaleX(.5) }
-.animate:hover .right { transform: translateX(-30px)   scaleX(.5) }
-
+.animate:hover .left { transform: translateX(25px)  scaleX(.5) }
+.animate:hover .right { transform: translateX(-25px)   scaleX(.5) }
 
 
 .sidebar {
@@ -120,12 +119,13 @@
 
 
 @media screen and (min-width: 800px) {
+  
 
   .sidebar {
     width: calc(64px + 5vw);
     min-width: 100px;
     background: none;
-    
+ 
 
   }
 
@@ -162,6 +162,7 @@
   .contact-nav {
     bottom: .5rem;
   }
-
+ 
+.animate{  transform: translateX(-28%)}
 }
 
