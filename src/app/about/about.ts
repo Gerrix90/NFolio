@@ -11,7 +11,6 @@ export default {
     content: [{
       type: 'text',
       value: `<h2 class="header-1" >Naim Bijapure</h2>
-      <a class="header-4 match-content" href="../assets/JonR-CV_Jul17.pdf" >Download CV</a> (pdf)
       `,
     }]
   }, {
