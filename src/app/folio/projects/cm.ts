@@ -17,75 +17,75 @@ export default {
     style: {
       color: '#140E2A',
       background: 'linear-gradient(#344dde, #55d9e7)',
+          
     },
   },
   rows: [
+    
     {
-      class: 'text-row row-collapse',
-      content: [{
-        type: 'image',
-        height: '100%',
-        value: `${rootLink}cm.png`,
-        alt: 'Code Mirror',
-      }, {
+      class: 'flex-reverse',
+      style: {
+        // background: `url(${rootLink}bg.svg) right/cover`,
+        color: '#3f51b5',
+        height:'1150px',
+      },
+      content: [
+        {
         type: 'text',
-        class: 'intro-text row-collapse',
+        class: 'intro-text',
         value: `
-        <h3 class="header-3" >The Project</h3>
-        <p>A android app which is used for comparing syntax of different programming languages</p>
-        <h3 class="header-3" >The Role</h3>
-        <p>Personal project. Learning  React Native with Redux</p>
-        <h3 class="header-3" >The Toolkit</h3>
-        <ul>
-          <li>Javascript framework = React Native</li>
-          <li>Built with create-react-native-app and webpack with ES6 </li>
-        </ul>
+        <h2 class="header-2"  >Code Mirror</h2>
+        <p>Android app</p>
+        <h4 class="header-4" >The Role</h4>
+        <p>personal project. Learning React Native and Redux</p>
+        <h4 class="header-4" >The Toolkit</h4>
+        <p>React Native |Redux | ES6</p>
+        
+        <h4 class="header-4" >Use </h4>
+        <p>This App is used for learn the basics of 9 programming languages by comparing the syntax of 2 languages with each other.  </p>
+        <h4 class="header-4" >Download <a class="match-content" href="#" ${linkAttrs} >App</a></h4>
         `,
+      }, {
+        type: 'image',
+        height: '130%',
+        class: 'image-shadow',
+        value: `${rootLink}cm-ss-2.png`,
+        alt: 'screen 2',
       }]
     }, {
-      class: 'text-row',
-      content: [{
+      class:'text-row row-collapse',
+      style: {
+        color: '#4c0f11',
+        backgroundColor:'#90b4f7',
+        height:'1150px'
+      },
+      content: [
+     
+        {
         type: 'text',
-        class: 'text-center',
+        // class: 'intro-text',
         value: `
-        <h3 class="header-3">View source on
-          <a href="https://github.com/Naim-bijapure/codemirror" ${linkAttrs} >Github</a>
-        </h3>
+       <p clase="header-3">My goal was to learn React Native and Redux by actually making something with it. The project was built with ES6,
+        and I used a number of modern JavaScript features such as the
+        <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator" ${linkAttrs} >
+        spread operator</a>,
+        <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions" ${linkAttrs} >
+        arrow functions</a> and
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises" ${linkAttrs} >
+        promises</a>.
+        For backwards compatability I also used webpack with Babel</p><br/> 
+        <p>And for the state Management i used Redux. As well as in this project i used different libraries of React Native such as React-native-fs
+         to access the file system of the android,Redux-thunk,react-native-vector-icon . 
+        </p>
+        <h4 class="header-4" >View <a class="match-content" href="https://github.com/Naim-Bijapure/CodeMirror" ${linkAttrs} >Source</a></h4>
         `,
       }, {
-        type: 'text',
-        class: 'text-center',
-        value: `
-        <h3 class="header-3">View
-          <a href="https://jon-richards.com/blackjack/" ${linkAttrs} >Live Game</a>
-        </h3>
-        `,
-      }],
-    },  {
-      class: 'text',
-      content: [{
-        type: 'text',
-        value: `
-        <p>My goal was to learn React Native and Redux by actually making something with it. The project was built with ES6.
-        and i implement some latest features of javascript language such as spread operator, arrow functions .
-        in this project i used different react native liabraries such as React naviagation to create the navigation,react file system to
-        access the file system of android. 
-        as well as i used the redux and react-redux liabrariy to manage the state of application  
-        </p>
-        `,
-        
-      },
-      {
-       type: 'image',
-        height: '13%',
-        class:'image-shadow',
-        value: `${rootLink}cm-ss-2.png`,
-        alt: 'Code Mirror',
-        caption: 'Website Animations'
-      }
-    ],
-
-       
+        type: 'image',
+        height: '100%',
+        class: 'image-shadow',
+        value: `${rootLink}cm-ss-1.png`,
+        alt: 'screen2',
+      }]
     }, 
 
       {

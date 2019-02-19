@@ -15,17 +15,33 @@ export default {
     }]
   }, {
     class: 'folio-content row-collapse',
+     
     content: [{
       type: 'text',
       value: `
 <h3 class="header-3" >About Me</h3>
 <hr>
-<p>I am a skilled & motivated technical developer, with experience in full stack web development
-and digital design. I am a self-taught coder with a strong lean towards web, picking
-up samples of other languages along the way.</p>
-<p>When working in development, I like to combine my past design experience and game
-development knowledge to produce clear, optimised code and pleasing results.</p>
-      `,
+<p>
+<h1> I'm a 22-year-old developer based in Pune,Maharastra.</h1> 
+<br/>
+ <b>I am a largely self-taught  Developer, working with the JavaScript ecosystem
+I specialize in JavaScript and my main area of interest is Full Stack javascript Development. <br/>
+<b>I love developing tools/sites/apps that solve real problems or help make someone's life easier. I like impactful work.</b>
+<i><br/>I have been writing code for a couple of years and have gotten my hand dirty in various languages and frameworks.
+<br/>I am responsible for my own project and take self-development seriously.I task and try to push myself to the limit every single day and enjoy every second of it.
+<b> <br/> My goal is to work as a web developer in a team of passionate, amazing people and work hard to achieve it.
+If you are an employer looking to hire or a friend who just wanna talk, feel free to contact me.
+
+</p>
+
+
+
+
+
+
+
+
+`,
     }]
   }, {
     class: 'folio-content row-collapse',
@@ -36,21 +52,22 @@ development knowledge to produce clear, optimised code and pleasing results.</p>
       <hr>
       <h5>Fluent In</h5>
       <ul>
-        <li>HTML5 | SVG (hand written)</li>
+        <li>HTML5 | JSON</li>
         <li>JavaScript | ES6 | TypeScript</li>
-        <li>React | Angular 4 | Vue.js | jQuery</li>
-        <li>CSS3 | SASS | Bootstrap | Foundation | PostCSS</li>
-        <li>PHP | WordPress</li>
+        <li>Nodejs|Express|React Native | Angular 7 | React.js |Vue.js| jQuery</li>
+        <li>CSS3 | SASS | Bootstrap |</li>
+        <li> WordPress</li>
+        <li> mongoDB</li>
         <li>Adobe Photoshop | Illustrator</li>
-        <li>Microsoft Office | Visio | Access</li>
-      </ul>
+        <li>Vim|Linux| Microsoft Office </li>
+       </ul>
+        
       <h5>Working Knowledge of</h5>
       <ul>
-        <li>NPM | Gulp | webpack</li>
-        <li>WAMP | Amazon AWS | SQL</li>
-        <li>VBA | Python | Lua</li>
-        <li>Adobe Creative Suite</li>
-        <li>Autodesk 3Ds Max</li>
+        <li>NPM | Gulp | webpack|Yarn|Parcel</li>
+        <li>Ionic|Cardova|Electron</li>
+        <li>LAMP | Amazon AWS | SQL</li>
+        <li> Python |Java|C++ </li>
       </ul>
       `,
     }]
@@ -61,25 +78,13 @@ development knowledge to produce clear, optimised code and pleasing results.</p>
       value: `
       <h3 class="header-3" >Education</h3>
       <hr>
-      <h5>2012 – University of Bolton</h5>
+      <h5>2017-Current –Pimpari Chinchawad Collage of Engineering, Pune University,Maharastra</h5>
       <ul>
-        <li>3D Games Art – Bachelors (Honors) First Class</li>
+        <li>MCA – Master Of Computer Application(pursuing)</li>
       </ul>
-      <h5>2009 Bay House Sixth Form, Gosport (A Levels)</h5>
-      <ul>
-        <li>A - Maths</li>
-        <li>C - Graphic Design</li>
-        <li>D - Physics</li>
-      </ul>
-      <h5>2007 Bay House Secondary School, Gosport</h5>
-      <ul>
-        <li>12 A*-C grades, including</li>
-        <li>A* - Maths</li>
-        <li>A – Graphic Design</li>
-        <li>A – Physics</li>
-        <li>A – ICT</li>
-        <li>A – Chemistry </li>
-        <li>B – English</li>
+      <h5>2014-2017 Shivaji University ,Kolhapur</h5>
+      <ul> 
+      <li>BCA-Bachlor Of Computer Application (first class)</li>
       </ul>
       `,
     }]

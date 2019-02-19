@@ -48,24 +48,20 @@ export default {
           <a href="https://github.com/Naim-bijapure/Nfolio" ${linkAttrs} >Github</a>
         </h3>
         `,
-      }, {
-        type: 'text',
-        class: 'text-center',
-        value: `
-        <h3 class="header-3">View
-          <a href="https://naim-bijapure.github.io" ${linkAttrs} >Live Game</a>
-        </h3>
-        `,
-      }],
+      },],
     },  {
-      class: 'text-row ',
+      class: 'center ',
       content: [{
         type: 'text',
         value: `
         <p>
         This is my personel portfolio site which i built in Angular 7 to showcase my work
-        this angular site have Progressive Web App features. 
-  
+        this  site have Progressive Web App features. 
+       <br/>
+      In this site i applied best css3 design principles.
+      And for the routing i used angular routing and for the animations i created custome
+      animations in angular .  
+      and to create intereactive background i used canvas.
         </p>
         
 
