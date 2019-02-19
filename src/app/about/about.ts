@@ -22,7 +22,7 @@ export default {
 <h3 class="header-3" >About Me</h3>
 <hr>
 <p>
-<h1> I'm a 22-year-old developer based in Pune,Maharastra.</h1> 
+<h1> I'm a 23-year-old developer based in Pune,Maharastra.</h1> 
 <br/>
  <b>I am a largely self-taught  Developer, working with the JavaScript ecosystem
 I specialize in JavaScript and my main area of interest is Full Stack javascript Development. <br/>
