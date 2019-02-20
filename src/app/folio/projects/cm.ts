@@ -43,7 +43,7 @@ export default {
         
         <h4 class="header-4" >Use </h4>
         <p>This App is used for learn the basics of 9 programming languages by comparing the syntax of 2 languages with each other.  </p>
-        <h4 class="header-4" >Download <a class="match-content" href="#" ${linkAttrs} >App</a></h4>
+        <h4 class="header-4" >Download <a class="match-content" href="https://play.google.com/store/apps/details?id=com.codemirror" ${linkAttrs} >App</a></h4>
         `,
       }, {
         type: 'image',
