@@ -55,13 +55,18 @@ export default {
         type: 'text',
         value: `
         <p>
-        This is my personel portfolio site which i built in Angular 7 to showcase my work
+        This is my personel portfolio site which i built in Angular 7 to showcase my work.
         this  site have Progressive Web App features. 
        <br/>
-      In this site i applied best css3 design principles.
-      And for the routing i used angular routing and for the animations i created custome
-      animations in angular .  
-      and to create intereactive background i used canvas.
+       In this site i try to apply best css3 design principles.
+       <br/>
+       This site is fully responsive on both desktop as well as mobile devices.
+       <br/>
+       For the navigation i used angular routing 
+       <br/>
+       And  for animation effects i created angular animations 
+       <br>
+       Background animation is done using canvas       
         </p>
         
 

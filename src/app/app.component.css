@@ -2,16 +2,16 @@
 .site-logo {
   width:100%;
   padding: 15px;
- 
+  /* margin-right: 15%; */
+  
 }
 .site-logo a {
   display: block;
   position: relative;
   max-width: 110px;
   max-height: 52px;
-  /* margin: auto; */
-  margin-left: 15%;
-
+  margin: 0 auto;
+  /* margin-left: 10%; */
 }
 
 /* site logo */
@@ -165,4 +165,9 @@
  
 .animate{  transform: translateX(-28%)}
 }
+
+.animate{
+  transform:translateX(-10%); 
+}
+
 

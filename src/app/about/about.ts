@@ -53,20 +53,22 @@ If you are an employer looking to hire or a friend who just wanna talk, feel fre
       <h5>Fluent In</h5>
       <ul>
         <li>HTML5 | JSON</li>
-        <li>JavaScript | ES6 | TypeScript</li>
-        <li>Nodejs|Express|React Native | Angular 7 | React.js |Vue.js| jQuery</li>
-        <li>CSS3 | SASS | Bootstrap |</li>
+        <li>JavaScript | ES5+ | TypeScript</li>
+        <li>Nodejs |Express |React Native | Angular 7 | React.js |Vue.js| jQuery</li>
+        <li>CSS3 | SASS |SCSS| Bootstrap </li>
         <li> WordPress</li>
         <li> mongoDB</li>
+        <li>Git | Github |Command Line </li>
+        <li>Vim | Linux | Microsoft Office </li>
         <li>Adobe Photoshop | Illustrator</li>
-        <li>Vim|Linux| Microsoft Office </li>
+        
        </ul>
         
       <h5>Working Knowledge of</h5>
       <ul>
         <li>NPM | Gulp | webpack|Yarn|Parcel</li>
-        <li>Ionic|Cardova|Electron</li>
-        <li>LAMP | Amazon AWS | SQL</li>
+        <li>Ionic |Cardova |Electron</li>
+        <li>LAMP | Amazon AWS | SQL| Heroku | Github Pages</li>
         <li> Python |Java|C++ </li>
       </ul>
       `,
@@ -78,13 +80,13 @@ If you are an employer looking to hire or a friend who just wanna talk, feel fre
       value: `
       <h3 class="header-3" >Education</h3>
       <hr>
-      <h5>2017-Current –Pimpari Chinchawad Collage of Engineering, Pune University,Maharastra</h5>
+      <h5>2017-Current –Pimpari Chinchwad Collage of Engineering, Pune University,Maharashtra</h5>
       <ul>
         <li>MCA – Master Of Computer Application(pursuing)</li>
       </ul>
       <h5>2014-2017 Shivaji University ,Kolhapur</h5>
       <ul> 
-      <li>BCA-Bachlor Of Computer Application (first class)</li>
+      <li>BCA-Bachelor of Computer Application (first class)</li>
       </ul>
       `,
     }]
