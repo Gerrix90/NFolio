@@ -73,7 +73,8 @@ export default {
         arrow functions</a> and
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises" ${linkAttrs} >
         promises</a>.
-        For backwards compatability I also used webpack with Babel</p><br/> 
+        For backwards compatability I also used webpack with Babel</p><br/>
+        <p>for the UI i used Native Base libray and to create the  Navigation i used react-native-navigation library to create different screen views</p> 
         <p>And for the state Management i used Redux. As well as in this project i used different libraries of React Native such as React-native-fs
          to access the file system of the android,Redux-thunk,react-native-vector-icon . 
         </p>

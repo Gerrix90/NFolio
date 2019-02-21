@@ -67,7 +67,9 @@ export default {
        And  for animation effects i created angular animations 
        <br>
        Background animation is done using canvas       
-        </p>
+       <br/>
+       Currently this site is hosted on Github pages
+       </p>
         
 
        
