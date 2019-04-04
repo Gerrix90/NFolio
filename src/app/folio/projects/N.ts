@@ -51,7 +51,7 @@ export default {
       },],
     },  {
       class: 'center ',
-      content: [{
+      content: [
         type: 'text',
         value: `
         <p>
