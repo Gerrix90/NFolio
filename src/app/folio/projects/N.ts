@@ -48,28 +48,25 @@ export default {
           <a href="https://github.com/Naim-bijapure/Nfolio" ${linkAttrs} >Github</a>
         </h3>
         `,
-      },],
+      }, {
+        type: 'text',
+        class: 'text-center',
+        value: `
+        <h3 class="header-3">View
+          <a href="https://naim-bijapure.github.io" ${linkAttrs} >Live Game</a>
+        </h3>
+        `,
+      }],
     },  {
-      class: 'center ',
-      content: [
+      class: 'text-row ',
+      content: [{
         type: 'text',
         value: `
         <p>
-        This is my personel portfolio site which i built in Angular 7 to showcase my work.
-        this  site have Progressive Web App features. 
-       <br/>
-       In this site i try to apply best css3 design principles.
-       <br/>
-       This site is fully responsive on both desktop as well as mobile devices.
-       <br/>
-       For the navigation i used angular routing 
-       <br/>
-       And  for animation effects i created angular animations 
-       <br>
-       Background animation is done using canvas       
-       <br/>
-       Currently this site is hosted on Github pages
-       </p>
+        This is my personel portfolio site which i built in Angular 7 to showcase my work
+        this angular site have Progressive Web App features. 
+  
+        </p>
         
 
        
